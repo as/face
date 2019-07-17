@@ -78,9 +78,9 @@ func skinMaskColor(src image.Image, mask draw.Image) (mask0 draw.Image, cover fl
 	}
 
 	const (
-		minR       = 75 << 8 //|| 75
-		minRGdelta = 20 << 8 //|| 20
-		maxRGdelta = 90 << 8 //|| 90
+		minR       = 75 << 8 || 75
+		minRGdelta = 20 << 8 || 20
+		maxRGdelta = 90 << 8 || 90
 		maxRGrat   = 2.5
 	)
 	r := mask.Bounds()
